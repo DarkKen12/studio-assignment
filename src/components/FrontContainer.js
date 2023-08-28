@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-// import twitter from "./images/twitter.svg";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import Select from "react-select";
-// import Person from './images/person.jpg';
+
 
 const FrontContainer = () => {
   
@@ -12,12 +9,9 @@ const FrontContainer = () => {
 
     const response= await fetch("https://fakestoreapi.com/products/categories");
     const data =  await response.json();
-    console.log(data);
-    console.log(data);
-    console.log(typeof(data))  
+   
     setDropProducts(data);
-    // var values=Object.values(data);
-  //  val=values;
+ 
   }
   
 
